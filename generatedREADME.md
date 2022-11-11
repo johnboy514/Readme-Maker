@@ -1,9 +1,11 @@
 
-# asd
+
+# Swag-Nation
+
 
 ## Description
 
-aasd
+swag
 
 ## Table of COntents
 
@@ -22,29 +24,29 @@ undefined
 
 ## Usage
 
-da
+swag
 
 ## Credits
 
-sda
+swag
 
-## License
 
-Apache
+
+
 
 ## Features
 
-sd
+swag
 
 ## How to Contribute
 
-asd
+swag
 
 ## Tests
 
-asd
+swag
 
 ## Questions
 
 My Github: [johnboy514](https://github.com/johnboy514)<br>
-Email me at: john.ifert.miller@gmail.com for any questions
+Email me at: swag for any questions

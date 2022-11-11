@@ -73,7 +73,7 @@ inquirer
         message: "What is your gitHub username?"
     },
 ])
-.then((answer) => {
+.then((answers) => {
     const createReadme = generateReadMe(answers);
     const fileName = "./generatedREADME.md";
     fs.appendFile(fileName, createReadme, (error) => error ? console.error(error) : console.log("Saved!"));

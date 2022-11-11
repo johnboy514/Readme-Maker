@@ -1,66 +1,87 @@
-// TODO: Include packages needed for this application
+// global constants
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
+const generateReadMe = require("./utils/generateMarkdown")
 
+// Questions
+function questions(){
 inquirer
-.createPromptModule([
+.prompt([
     {
         type: "input",
-        name: "name",
-        message: "What is your name?"
+        name: "title",
+        message: "What is your projects name?"
     },
     {
         type: "input",
-        name: "bio",
-        message: "What is your bio?"
+        name: "description",
+        message: "What is a description of your project?"
     },
     {
         type: "input",
-        name: "location",
-        message: "What is your location?"
+        name: "installation",
+        message: "How do you install your project?"
     },
     {
         type: "input",
-        name: "linkedIn",
-        message: "What is your linkedIn?"
+        name: "usage",
+        message: "What is the purpose of your project?"
+    },
+    {
+        type: "input",
+        name: "credits",
+        message: "List your credits:"
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Choose the used licences for this project:",
+        choices: [
+            "Apache",
+            "Academic",
+            "GNU",
+            "ISC",
+            "MIT",
+            "Mozilla",
+            "Open",
+            "None"
+        ]
+    },
+    {
+        type: "input",
+        name: "features",
+        message: "What are your projects features?"
+    },
+    {
+        type: "input",
+        name: "contribute",
+        message: "How did you contribute to your project?"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Go the extra mile and write tests for your application. Then provide examples on how to run them here:"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "what is your email?"
     },
     {
         type: "input",
         name: "gitHub",
-        message: "What is your Github?"
+        message: "What is your gitHub username?"
     },
 ])
 .then((answer) => {
-    let htmlContent = 
-    '<html>\n\
-            <head>\n\
-                <meta charset="UTF-8"><link rel="stylesheet" href="style.css">\n\
-                <title>Portfolio</title>\n\
-            </head>\n\
-            <body>\n\
-                <header>\n\
-                    <h1 class="title">Portfolio</h1>\n\
-                </header>\n\
-                <h2 id="name">' + answer.name + '</h2>\n\
-                <p id="bio" >' + answer.bio + '</p>\n\
-                <h2 class="title">Contact Info</h2>\n\
-                <ul>\n\
-                    <li id="location"><strong>Location:</strong>' + answer.location + '</li>\n\
-                    <li id="linkedIn"><strong>LinkedIn:</strong>' + answer.linkedIn + '</li>\n\
-                    <li id="github"><strong>Github:</strong>' + answer.gitHub + '</li>\n\
-                </ul>\n\
-            </body>\n\
-    </html>';
-    fs.appendFile('index.html', htmlContent, (error) => error ? console.error(error) : console.log("Saved!"));
+    const createReadme = generateReadMe(answers);
+    const fileName = "./generatedREADME.md";
+    fs.appendFile(fileName, createReadme, (error) => error ? console.error(error) : console.log("Saved!"));
 });
-// TODO: Create an array of questions for user input
-const questions = [];
+}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function init() {
+    questions();
+}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
 init();

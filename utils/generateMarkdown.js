@@ -61,7 +61,7 @@ ${answers.tests}
 
 ## Questions
 
-My Github: [${answers.github}](https://github.com/${answers.gitHub})<br>
+My Github: [${answers.gitHub}](https://github.com/${answers.gitHub})<br>
 Email me at: ${answers.email} for any questions
 `;
 }

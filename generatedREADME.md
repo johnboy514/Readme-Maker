@@ -1,11 +1,11 @@
 
 
-# Swag-City
-![badge](https://img.shields.io/badge/license-Mozilla-lightblue)
+# Example
+
 
 ## Description
 
-Swag
+Example
 
 ## Table of COntents
 
@@ -24,29 +24,29 @@ undefined
 
 ## Usage
 
-Swag
+Example
 
 ## Credits
 
-Swag
+Example
 
-## License
 
-This application is covered by the Mozilla license <br> [Link to Mozilla license](https://www.mozilla.org/en-US/MPL/)
+
+
 
 ## Features
 
-Swag
+Example
 
 ## How to Contribute
 
-Swag
+Example
 
 ## Tests
 
-Swag
+Example
 
 ## Questions
 
-My Github: [johnoby514](https://github.com/johnoby514)<br>
-Email me at: Swag for any questions
+My Github: [johnboy514](https://github.com/johnboy514)<br>
+Email me at: Example@gmail.com for any questions

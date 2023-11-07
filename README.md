@@ -17,7 +17,7 @@ To use this project the user needs be in the project folder to open the index.js
 
 ## Usage
 
-To utilize this page the user needs to right clicking on the index.js then click the integrated terminal option. The user then types in the terminal "node index.js" to activate the program. The user then can fill out the rest of the form using the terminal and at its conclusion it will create "generatedREADME.md".
+To utilize this page the user needs to right click on the index.js then click the integrated terminal option. The user then types in the terminal "node index.js" to activate the program. The user then can fill out the rest of the form using the terminal and at its conclusion it will create "generatedREADME.md".
 
 ![Main-Page](assets/Integarted-Terminal.gif)
 
